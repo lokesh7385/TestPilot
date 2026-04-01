@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # Temporary store for analysis results to allow "Apply Fix" lookup by index
 # In a real app, this should be a DB or session-based. For local single-user, global is fine. 
-LATEST_ANALYSIS = {} 
+LATEST_ANALYSIS = {}  
 
 @app.route('/')
 def home():
