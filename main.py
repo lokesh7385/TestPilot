@@ -151,7 +151,7 @@ def analyze_with_openrouter(user_input, api_key):
         system_prompt = get_system_prompt()
         
         response = client.chat.completions.create(
-            model="deepseek/deepseek-v3.2", # OpenRouter requires vendor prefix usually, or maps standard names
+            model="deepseek/deepseek-chat", # Valid OpenRouter DeepSeek V3 model ID
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input},
